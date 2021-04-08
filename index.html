@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/e3e1481f16.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Тема 30: Events</h1>
+    <form action="#" method="GET" class="taskform">
+      <fieldset class="taskform__taskunit" id="task1">
+        <legend>Задание №1</legend>
+        <p>Создать страницу, которая выводит нумерованный список песен</p>
+        <div class="buttonsblock">
+          <button onclick="getPlaylist()">Show Playlist</button>
+        </div>
+        <div class="taskform__playlist-block">
+          <ol class="taskform__songs-playlist" id="songs-playlist"></ol>
+        </div>
+      </fieldset>
+
+      <fieldset class="taskform__taskunit" id="task2">
+        <legend>Задание №2</legend>
+        <p>
+          Создать HTML-страницу с кнопкой Like, при нажатии на которую увеличивается счетчик лайков.
+        </p>
+        <p>You have <span class="taskform__likesCounter" id="likes-counter">0</span> likes at the moment!</p>
+        <div class="buttonsblock">
+          <button id="likes-btn">
+            <i class="far fa-thumbs-up"></i>
+            Like!
+          </button>
+        </div>
+      </fieldset>
+      <fieldset class="taskform__taskunit" id="task3">
+        <legend>Задание №3</legend>
+        <p>
+          Создать HTML-страницу с любым содержимым и запретить пользователю выделять текст и вызывать контекстное меню кликом правой кнопки.
+        </p>
+        <div class="buttonsblock">
+          <button onclick="switchSemaphore()">Switch Semaphore</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script src="js/script.js"></script>
+</html>

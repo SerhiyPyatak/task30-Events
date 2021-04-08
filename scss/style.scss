@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.taskform {
+    &__taskunit {
+        display:		flex;
+        flex-direction: column;
+        margin:			10px;
+
+        &:nth-child(odd) {
+            background-color:	lightyellow;
+        }
+
+        &__taskunit > * {
+            cursor:				pointer;
+        }
+    }
+
+    &__likesCounter {
+        color:          red;
+        font-size:      large;
+    }
+    
+}
+
+label p {
+	margin: 			0 5px;
+}
+
+button {
+	margin: 			10px 10px;
+	cursor:				pointer;
+	height: 			40px;
+	width: 				140px;
+}
