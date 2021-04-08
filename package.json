@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/:css/ --watch"
+    "sass": "sass scss/:css/ --watch",
+    "compile": "sass scss/style.scss:css/style.css",
+    "prefix": "postcss --use autoprefixer -o css/style.css css/style.css",
+    "minify": "cleancss --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "build": "npm run compile && npm run prefix && npm run minify"
   },
   "author": "Serhii Piatak",
   "license": "ISC",
   "dependencies": {
     "eslint-config-airbnb": "^18.2.1",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "autoprefixer": "^10.2.5",
+    "browserlist": "^1.0.1",
+    "clean-css-cli": "^5.2.1",
+    "normalize-scss": "^7.0.1",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1"
   },
   "devDependencies": {
     "eslint": "^7.23.0",
@@ -32,5 +42,8 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "browserslist": [
+    "last 4 version"
+  ]
 }
