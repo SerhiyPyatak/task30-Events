@@ -2,6 +2,7 @@ const likeButton = document.getElementById('likes-btn');
 const prohibited = document.getElementById('prohibited');
 let likesCounter = 0;
 
+
 document.addEventListener('keydown', (event) => {
 	const {code, ctrlKey, key} = event;
 	event.preventDefault();
@@ -17,7 +18,7 @@ document.addEventListener('keydown', (event) => {
 		divElement.innerHTML = txtArea.innerHTML;
 	} else {
 		txtArea.innerHTML += key;
-		//console.log()
+		//console.log();
 	}
 })
 
