@@ -2,7 +2,6 @@ const likeButton = document.getElementById('likes-btn');
 const prohibited = document.getElementById('prohibited');
 let likesCounter = 0;
 
-
 document.addEventListener('keydown', (event) => {
 	const {code, ctrlKey, key} = event;
 	event.preventDefault();
