@@ -14,14 +14,14 @@
   "author": "Serhii Piatak",
   "license": "ISC",
   "dependencies": {
-    "eslint-config-airbnb": "^18.2.1",
-    "sass": "^1.32.8",
     "autoprefixer": "^10.2.5",
     "browserlist": "^1.0.1",
     "clean-css-cli": "^5.2.1",
+    "eslint-config-airbnb": "^18.2.1",
     "normalize-scss": "^7.0.1",
     "postcss": "^8.2.8",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "eslint": "^7.23.0",

@@ -46,3 +46,16 @@ button {
 	height: 			40px;
 	width: 				140px;
 }
+
+#whiteboard {
+	border: 1px solid red;
+	height: 200px;
+	width: 300px;
+	word-wrap: break-word;
+}
+
+#task1-textarea {
+	height:         200px;
+	width:          300px;
+	display:        none;
+}
